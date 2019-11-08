@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "372c8ea2-aee7-4a31-ac50-ca4f6a82f70b",
+		"name": "TODO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}",
+					"host": [
+						"{{URL}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/todo",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"todo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create a new todo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"text\": \"Do something\",\n\t\"due\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/todo",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"todo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get a todo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/todo/:id",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"todo",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "set a todo",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/javascript",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"text\": \"Do another thing\",\n    \"due\": null\n}",
+					"options": {
+						"raw": {
+							"language": "javascript"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/todo/:id",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"todo",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "other"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "remove a todo",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/javascript"
+					}
+				],
+				"url": {
+					"raw": "{{URL}}/todo/:id",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"todo",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "other"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,95 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+#btnDelete {
+    color: #444444;
+    background: #F3F3F3;
+    border: 1px #DADADA solid;
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 9pt;
+    outline: none;
+    margin-right: 20%;  
+}
+
+#btnDelete:hover{
+    transition: background-color 2.0s ease;
+    background-color: red;    
+}
+
+#btnEdit {
+  color: #444444;
+  background: #F3F3F3;
+  border: 1px #DADADA solid;
+  padding: 5px 10px;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 9pt;
+  outline: none;
+}
+
+#btnEdit:hover{
+  transition: background-color 2.0s ease;
+  background-color: green;    
+}
+
+
+.btn{
+  color: #444444;
+  background: #F3F3F3;
+  border: 1px #DADADA solid;
+  padding: 5px 10px;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 9pt;
+  outline: none;
+}
+
+.btn:hover{
+  transition: background-color 2.0s ease;
+  background-color: aquamarine;    
+}
+
+#btnSave{
+  color: #444444;
+  background: #F3F3F3;
+  border: 1px #DADADA solid;
+  padding: 5px 10px;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 9pt;
+  outline: none;
+   
+}
+
+#btnSave:hover{
+  transition: background-color 2.0s ease;
+  background-color: aquamarine;   
+}
+
+#btnCancelar{
+  color: #444444;
+  background: #F3F3F3;
+  border: 1px #DADADA solid;
+  padding: 5px 10px;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 9pt;
+  outline: none;
+  margin-left: 20%;  
+}
+
+#btnCancelar:hover{
+  transition: background-color 2.0s ease;
+  background-color: red;    
+}
